@@ -16,8 +16,6 @@ public class MainActivity2 extends AppCompatActivity {
 
     ViewPager viewPager;
 
-
-
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +25,6 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
 
 
-
-//        listView =  findViewById(R.id.listView);
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
