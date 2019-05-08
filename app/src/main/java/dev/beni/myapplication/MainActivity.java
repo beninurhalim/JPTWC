@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import dev.beni.myapplication.home.Home;
 import dev.beni.myapplication.learn.Learn;
+import dev.beni.myapplication.maps.MapsFragment;
 import dev.beni.myapplication.profile.Profile;
 import dev.beni.myapplication.maps.maps;
 
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.search:
-                        fragment = new maps();
+                        fragment = new MapsFragment();
                         break;
 
                     case R.id.learn:
