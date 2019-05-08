@@ -7,18 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import java.util.List;
-
 import dev.beni.myapplication.R;
+import dev.beni.myapplication.model.LearnModel;
 
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private List<User> item;
+    private List<LearnModel> item;
     private Context context ;
 
-    public RecyclerViewAdapter(Context context, List<User> item ) {
+    public RecyclerViewAdapter(Context context, List<LearnModel> item ) {
         Log.i("autolog", "RecyclerViewAdapter");
         this.item = item;
         this.context = context;
