@@ -1,4 +1,4 @@
-package dev.beni.myapplication.fragment;
+package dev.beni.myapplication.home;
 
 import android.content.Intent;
 import android.os.Bundle;

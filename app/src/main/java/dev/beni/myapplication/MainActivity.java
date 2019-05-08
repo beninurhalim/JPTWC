@@ -8,10 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 
-import dev.beni.myapplication.fragment.Home;
-import dev.beni.myapplication.fragment.Learn;
-import dev.beni.myapplication.fragment.Profile;
-import dev.beni.myapplication.fragment.Search;
+import dev.beni.myapplication.home.Home;
+import dev.beni.myapplication.learn.Learn;
+import dev.beni.myapplication.profile.Profile;
+import dev.beni.myapplication.maps.maps;
 
 public class MainActivity extends AppCompatActivity {
     public MainActivity(){};
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.search:
-                        fragment = new Search();
+                        fragment = new maps();
                         break;
 
                     case R.id.learn:

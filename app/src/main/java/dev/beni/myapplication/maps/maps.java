@@ -1,4 +1,4 @@
-package dev.beni.myapplication.fragment;
+package dev.beni.myapplication.maps;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,12 +10,12 @@ import android.view.ViewGroup;
 
 import dev.beni.myapplication.R;
 
-public class Learn extends Fragment {
+public class maps extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_learn, container, false);
+        return inflater.inflate(R.layout.fragment_search, container, false);
     }
 }
