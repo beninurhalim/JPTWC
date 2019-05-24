@@ -16,7 +16,7 @@
                 android:name="com.google.android.geo.API_KEY"
                 android:value="@string/google_maps_key" />
 
-            <activity android:name=".MainActivity">
+            <activity android:name=".login.singin_activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,6 +24,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivitySouvenir" />
+            <activity android:name=".event.EventActivity" />
+            <activity android:name=".login.Home_screen" />
+            <activity android:name=".login.singup_activity" />
+            <activity android:name=".MainActivity" />
     </application>
 
 

@@ -18,7 +18,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MainActivity2 extends AppCompatActivity {
+public class EventActivity extends AppCompatActivity {
 
     private LinearLayoutManager layoutManager;
     private List<LearnModel> learnList =null;
@@ -55,13 +55,13 @@ public class MainActivity2 extends AppCompatActivity {
 
                     learnList = response.body();
                     RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler);
-                    LinearLayoutManager layoutManager = new LinearLayoutManager(MainActivity2.this);
+                    LinearLayoutManager layoutManager = new LinearLayoutManager(EventActivity.this);
                     recyclerView.setLayoutManager(layoutManager);
                     RecyclerViewAdapter recyclerViewAdapter =new RecyclerViewAdapter(getApplicationContext(), learnList);
                    recyclerView.setAdapter(recyclerViewAdapter);
 
 //                    recyclerView = findViewById(R.id.recycler);
-//                    LinearLayoutManager manager = new LinearLayoutManager(MainActivity2.this);
+//                    LinearLayoutManager manager = new LinearLayoutManager(EventActivity.this);
 //                    recyclerView.setLayoutManager(manager);
 //                    recyclerView.setHasFixedSize(true);
 //                    adapter = new MyAdapter();

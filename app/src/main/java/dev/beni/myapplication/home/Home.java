@@ -20,6 +20,7 @@ import dev.beni.myapplication.ActivitySouvenir;
 import dev.beni.myapplication.MainActivity;
 import dev.beni.myapplication.R;
 import dev.beni.myapplication.adapter.ViewPagerAdapter;
+import dev.beni.myapplication.event.EventActivity;
 
 
 public class Home extends Fragment {
@@ -90,6 +91,10 @@ public class Home extends Fragment {
 
                     if (finalI ==0){
                         Intent intent = new Intent(view.getContext(), ActivitySouvenir.class);
+                        intent.putExtra("info","This is activity from card item index  "+finalI);
+                        startActivity(intent);
+                    }else if (finalI ==4){
+                        Intent intent = new Intent(view.getContext(), EventActivity.class);
                         intent.putExtra("info","This is activity from card item index  "+finalI);
                         startActivity(intent);
                     }

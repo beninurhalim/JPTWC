@@ -8,4 +8,10 @@
     <string name="position">position</string>
     <string name="birth_date">Birth date</string>
     <string name="no">no</string>
+    <string name="email_id">email id</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="failed">Authentication failed</string>
+    <string name="image">image</string>
+    <string name="create_a_new_account">Create a new Account!</string>
 </resources>
